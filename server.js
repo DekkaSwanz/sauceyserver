@@ -17,7 +17,7 @@ app.get('/',async (req,res)=>{
         await page.goto(`https://${url}`)
 
         let document = await page.evaluate(()=> document.documentElement.outerHTML)
-            document = replace(document,`/?url=${url.split('/')[0]}`)
+            document = absolutify(document,`/?url=${url.split('/')[0]}`)
 
         return res.send(document)
         }catch (e){
