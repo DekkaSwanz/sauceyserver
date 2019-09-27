@@ -1,0 +1,18 @@
+{
+  "name": "sauceyserver",
+  "version": "1.0.0",
+  "description": "The sauce",
+  "main": "server.js",
+  "dependencies": {
+    "absolutify": "^0.1.0",
+    "express": "^4.17.1",
+    "puppeteer": "^1.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Hidekki",
+  "license": "ISC"
+}
